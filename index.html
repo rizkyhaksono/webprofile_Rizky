@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Portfolio Rizky</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="app.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="assets/img/favicon.ico" />
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">
+        <img src="assets/img/favicon.ico" alt="Icon" class="icon-navbar" />
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Body -->
+    <main class="contents">
+      <div class="row">
+        <div class="content-wrapper">
+          <h1>Hi I'm Rizky Haksono.</h1>
+          <p>Saya adalah mahasiswa Universitas Muhammadiyah Malang</p>
+          <div>
+            <a href="#" class="btn">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="content-wrapper">
+          <img src="assets/img/compressed.jpg" alt="Foto Profil" class="profil-img" />
+        </div>
+      </div>
+
+      <!-- About Me -->
+      <h2 style="text-align: center" id="about">About Me</h2>
+      <div class="row container">
+        I am a fullstack web developer and mobile developer with a passion for learning new technologies. I have a background in the Informatics Engineering and have worked in a variety of roles. I am a self-motivated individual who is
+        always looking to improve my skills and learn new things. I am a team player and enjoy working with others to achieve a common goal.
+      </div>
+
+      <!-- Project -->
+      <h2 style="text-align: center" id="project">Project</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="assets/img/test.png" alt="Jane" style="width: 100%" />
+            <div class="container">
+              <h2>Jane Doe</h2>
+              <p class="title">CEO & Founder</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>jane@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="assets/img/test.png" alt="Mike" style="width: 100%" />
+            <div class="container">
+              <h2>Mike Ross</h2>
+              <p class="title">Art Director</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>mike@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="assets/img/test.png" alt="John" style="width: 100%" />
+            <div class="container">
+              <h2>John Doe</h2>
+              <p class="title">Designer</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>john@example.com</p>
+              <p><button class="button">Contact</button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Us -->
+      <div class="container">
+        <h2 style="text-align: center" id="contact">Contact Me</h2>
+        <form action="action_page.php">
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+
+          <label for="lname">Email</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height: 200px"></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+
+      <!-- Footer -->
+      <footer>
+        <p>
+          <a href="https://github.com/rizkyhaksono/" style="color: white"> Made with Love &#9825; Rizky Haksono </a>
+          <br /><br />
+          <a href="mailto:mrizkyhaksono@gmail.com" style="color: white">mrizkyhaksono@gmail.com</a>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
