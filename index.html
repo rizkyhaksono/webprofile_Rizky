@@ -30,7 +30,7 @@
     <!-- Body -->
     <main class="contents">
       <div class="row">
-        <div class="content-wrapper">
+        <div class="content-wrapper info-profil">
           <h1>Hi I'm Rizky Haksono.</h1>
           <p>Saya adalah mahasiswa Universitas Muhammadiyah Malang</p>
           <div>
@@ -46,7 +46,7 @@
       <!-- About Me -->
       <h2 style="text-align: center" id="about">About Me</h2>
       <div class="row container">
-        I am a fullstack web developer and mobile developer with a passion for learning new technologies. I have a background in the Informatics Engineering and have worked in a variety of roles. I am a self-motivated individual who is
+        I am a front-end web developer and mobile developer with a passion for learning new technologies. I have a background in the Informatics Engineering and have worked in a variety of roles. I am a self-motivated individual who is
         always looking to improve my skills and learn new things. I am a team player and enjoy working with others to achieve a common goal.
       </div>
 
@@ -55,39 +55,33 @@
       <div class="row">
         <div class="column">
           <div class="card">
-            <img src="assets/img/test.png" alt="Jane" style="width: 100%" />
+            <img src="assets/img/picture1.jpg" alt="Project 1" style="width: 100%" />
             <div class="container">
-              <h2>Jane Doe</h2>
-              <p class="title">CEO & Founder</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p>jane@example.com</p>
-              <p><button class="button">Contact</button></p>
+              <h2>Pemrograman Fungsional</h2>
+              <p>Tugas kuliah yang memakai bahasa python</p>
+              <button class="button" onclick='clickMore("https://github.com/rizkyhaksono/pemrograman-fungsional")'>See more</button>
             </div>
           </div>
         </div>
 
         <div class="column">
           <div class="card">
-            <img src="assets/img/test.png" alt="Mike" style="width: 100%" />
+            <img src="assets/img/picture2.jpg" alt="Project 2" style="width: 100%" />
             <div class="container">
-              <h2>Mike Ross</h2>
-              <p class="title">Art Director</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p>mike@example.com</p>
-              <p><button class="button">Contact</button></p>
+              <h2>Pemrograman Berorientasi Obyek</h2>
+              <p>Tugas kuliah yang memakai bahasa java</p>
+              <button class="button" onclick='clickMore("https://github.com/rizkyhaksono/project-game-adventure")'>See more</button>
             </div>
           </div>
         </div>
 
         <div class="column">
           <div class="card">
-            <img src="assets/img/test.png" alt="John" style="width: 100%" />
+            <img src="assets/img/picture3.jpg" alt="Project 3" style="width: 100%" />
             <div class="container">
-              <h2>John Doe</h2>
-              <p class="title">Designer</p>
-              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-              <p>john@example.com</p>
-              <p><button class="button">Contact</button></p>
+              <h2>Struktur Data</h2>
+              <p>Tugas kuliah yang memakai bahasa python dan java</p>
+              <button class="button" onclick='clickMore("https://github.com/rizkyhaksono/Struktur-Data-Demo")'>See more</button>
             </div>
           </div>
         </div>
@@ -96,7 +90,7 @@
       <!-- Contact Us -->
       <div class="container">
         <h2 style="text-align: center" id="contact">Contact Me</h2>
-        <form action="action_page.php">
+        <form>
           <label for="fname">Name</label>
           <input type="text" id="fname" name="firstname" placeholder="Your name.." />
 
@@ -106,7 +100,7 @@
           <label for="subject">Subject</label>
           <textarea id="subject" name="subject" placeholder="Write something.." style="height: 200px"></textarea>
 
-          <input type="submit" value="Submit" />
+          <button class="button" onclick="myFunction()">Submit</button>
         </form>
       </div>
 
@@ -119,5 +113,14 @@
         </p>
       </footer>
     </main>
+    <script>
+      function myFunction() {
+        alert("Sudah terkirim");
+      }
+
+      function clickMore(link) {
+        window.location.href = link;
+      }
+    </script>
   </body>
 </html>
